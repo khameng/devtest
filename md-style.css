@@ -1,0 +1,159 @@
+body {
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 200
+}
+h6 {
+    font-weight: 300
+}
+p {
+    font-weight: 500
+}
+.nav {
+    margin: 0; 
+   background: none; 
+   width: 100%; 
+   text-align: center; 
+    position:fixed;
+    text-transform:uppercase;
+    z-index: 99999999999 !important;
+}
+.link-wrapper {
+    list-style: none; 
+   margin: 0; 
+   padding: 0; 
+}
+.link-wrapper li {
+    margin: 0; 
+   padding: 0; 
+   display: inline; 
+}
+.link-wrapper li a {
+    margin: 0; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: medium; 
+   color: #fff;
+    padding:40px;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    transition:all .3s ease;
+}
+.link-wrapper li a:hover {
+    color:red;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    transition:all .3s ease;
+}
+.link-wrapper li a:active {
+    color:red;
+}
+.home {
+    height: 103vh;
+    background-image: url(./md-images/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top:-25px !important;
+}
+.hero-text {
+    color: #fff
+}
+.main-hero {
+    text-shadow: 2px 2px 8px #000
+}
+.learn {
+    color: #fff;
+    margin-top: 4%
+}
+.about {
+    height: 100vh;
+    background-image: url(./md-images/bg2.png);
+    background-attachment: fixed;
+    margin-top: -22px;
+    background-size: cover
+}
+.about-block {
+    height: 50vh;
+    display: block
+}
+.about-sub-block {
+    height: 25vh;
+    display: block
+}
+span {
+    color: #fff
+}
+.about-des {
+    margin-top: 3%;
+    line-height: 150%
+}
+.about-btn {
+    margin-top: 5%
+}
+.about-sub-btn {
+    color: red
+}
+.work {
+    background-color: #424242
+}
+.work-card {
+    margin-top: 8%
+}
+.sub-work-card,
+.work-btn {
+    margin-bottom: 9%
+}
+.services{
+    height:103vh;
+    background-image:url(./md-images/bg3.jpg);
+    background-attachment: fixed;
+    margin-top: -22px;
+    background-size: cover;
+}    
+.services-block {
+    height: 50vh;
+    display: block;
+}
+.sub-services-block {
+    height: 25vh;
+    display: block;
+}
+.services-text{
+    color:#fff;
+}
+.services-des{
+    line-height:150%;
+    color:#fff;
+}
+.contact {
+    height: 100vh;
+    background-image: url(./md-images/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -22px;
+    margin-bottom: -22px
+}
+.contact-text {
+    color: #fff
+}
+.contact-block {
+    height: 35vh;
+    display: block
+}
+.sub-contact-block {
+    height: 30vh;
+    display: block
+}
+.contact-des {
+    margin-top: 3%;
+    line-height: 150%
+}
+
+
