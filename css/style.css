@@ -104,7 +104,7 @@
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .hero-text-title {
-        font-size: 11vh;
+        font-size: 13vh;
     }
     .hero-text {
         line-height: 6vh;
@@ -113,7 +113,7 @@
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
     .hero-text-title {
-        font-size: 11vh;
+        font-size: 13vh;
     }
     .hero-text {
         line-height: 6vh;
