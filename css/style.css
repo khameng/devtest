@@ -105,18 +105,20 @@
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .hero-text-title {
-        font-size: 16vmax;
+        font-size: 16vh;
     }
     .hero-text {
-        line-height: 5vh;
+        font-size: 4vh;
+        line-height: 4vh;
     }
 }
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
     .hero-text-title {
-        font-size: 16vmax;
+        font-size: 16vh;
     }
     .hero-text {
-        line-height: 5vh;
+        font-size: 4vh;
+        line-height: 4vh;
     }
 }
