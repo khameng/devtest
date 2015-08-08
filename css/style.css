@@ -105,40 +105,40 @@
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
     .hero-text-title {
-        font-size: 16vh;
+        font-size: 8vh;
     }
     .hero-text {
-        font-size: 7vh;
+        font-size: 5vh;
         line-height: 4vh;
     }
 }
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
     .hero-text-title {
-        font-size: 16vh;
+        font-size: 8vh;
     }
     .hero-text {
-        font-size: 7vh;
+        font-size: 5vh;
         line-height: 4vh;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
     .hero-text-title {
-        font-size: 13vh;
+        font-size: 8vh;
     }
     .hero-text {
-        font-size: 6vh;
+        font-size: 5vh;
         line-height: 4vh;
     }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
     .hero-text-title {
-        font-size: 10vh;
+        font-size: 7vh;
     }
     .hero-text {
-        font-size: 5vh;
+        font-size: 3vh;
         line-height: 4vh;
     }
 }
