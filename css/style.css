@@ -103,12 +103,22 @@
     margin-right: 7rem;
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 201px) and (max-width: 400px) {
     .hero-text-title {
-        font-size: 10vh;
+        font-size: 12vh;
     }
     .hero-text {
-        font-size: 7vh;
+        font-size: 5vh;
+        line-height: 4vh;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+    .hero-text-title {
+        font-size: 12vh;
+    }
+    .hero-text {
+        font-size: 4vh;
         line-height: 4vh;
     }
 }
@@ -118,7 +128,7 @@
         font-size: 10vh;
     }
     .hero-text {
-        font-size: 7vh;
+        font-size: 4vh;
         line-height: 4vh;
     }
 }
@@ -128,7 +138,7 @@
         font-size: 9vh;
     }
     .hero-text {
-        font-size: 6vh;
+        font-size: 3vh;
         line-height: 4vh;
     }
 }
