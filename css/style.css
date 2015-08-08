@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:500);
+html {
+    font-size: 1em;
+}
+
 .home {
     /*background: url('https://unsplash.it/g/1440/1080/?random');*/
     
@@ -13,7 +17,7 @@
 
 .hero-text-title {
     font-family: 'Playfair Display', serif;
-    font-size: 6rem;
+    font-size: 6em;
     margin-bottom: 4rem;
 }
 
@@ -99,4 +103,34 @@
 .button-2 {
     float: right;
     margin-right: 7rem;
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 0.5em !important;
+    }
 }
