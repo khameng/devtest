@@ -104,6 +104,22 @@ body {
     color: #000 !important;
 }
 
+@media only screen and (max-width: 250px) {
+    body {
+        font-size: 60%;
+    }
+    .home-button {
+        width: 8em !important;
+        text-align: center !important;
+    }
+    .button-1 {
+        margin-right: 10px;
+    }
+    .button-2 {
+        margin-left: 10px;
+    }
+}
+
 @media only screen and (max-width: 350px) {
     body {
         font-size: 80%;
