@@ -8,6 +8,9 @@ body {
     /*background: url('https://unsplash.it/g/1440/1080/?random');*/
     
     background: url('../images/bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 }
 
