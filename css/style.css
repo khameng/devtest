@@ -1,234 +1,17 @@
+/* FRAMEWORK */
+
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:500);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 body {
     font-size: 100%;
-}
-
-.logo {
-    height: 2em !important;
-    width: 2em !important;
-    position: fixed;
-    z-index: 99999999;
-    transition: .6s ease;
-}
-
-.logo2 {
-    height: 1em;
-    position: fixed;
-    z-index: 99999999;
-    transition: .6s ease;
-}
-/* HAMBURGER */
-
-.top-animate {
-    background: #000 !important;
-    top: 13px !important;
-    -webkit-transform: rotate(45deg);
-    /* Chrome, Safari, Opera */
-    
-    transform: rotate(45deg);
-}
-
-.mid-animate {
-    opacity: 0;
-}
-
-.bottom-animate {
-    background: #000 !important;
-    top: 13px !important;
-    -webkit-transform: rotate(-225deg);
-    /* Chrome, Safari, Opera */
-    
-    transform: rotate(-225deg);
-}
-
-.top-menu {
-    top: 5px;
-    width: 25px;
-    height: 2px;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: .6s ease;
-}
-
-.mid-menu {
-    top: 13px;
-    width: 25px;
-    height: 2px;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: .6s ease;
-}
-
-.bottom-menu {
-    top: 21px;
-    width: 25px;
-    height: 2px;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: .6s ease;
-}
-/*
-.hamburger-icon:hover .top-menu {
-    height: 3px;
-    transition: .6s ease;
-}
-
-.hamburger-icon:hover .mid-menu {
-    height: 3px;
-    transition: .6s ease;
-}
-
-.hamburger-icon:hover .bottom-menu {
-    height: 3px;
-    transition: .6s ease;
-}
-
-.hamburger-icon:hover .top-animate {
-    height: 3px;
-}
-
-.hamburger-icon:hover .bottom-animate {
-    height: 3px;
-}*/
-
-.menui {
-    background: #fff;
-    transition: 0.6s ease;
-    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
-    position: absolute;
-}
-
-.icon {
-    top: 15%;
-    right: 20%;
-    z-index: 999;
-    position: fixed;
-    display: block;
-    height: 32px;
-    width: 32px;
-}
-
-.mobilenav {
-    /*    top: 47px !important;*/
-    
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    opacity: 1;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.mobilenav-wrap {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.mobilenav li {
-    list-style-type: none;
-    text-align: center;
-    padding: 0.6em;
-}
-
-.mobilenav li a:hover {
-    color: #8b8b8b !important;
-    transition: all .3s ease;
-}
-
-.mobilenav li a {
-    font-size: 150%;
-    color: #000;
-    text-decoration: none;
-    font-weight: 300;
-    width: 100%;
-    transition: all .3s ease;
-}
-
-.hamburger-icon p {
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    position: fixed;
-    z-index: 999999999;
-    margin-left: -45px;
-    margin-top: 5px;
-    opacity: 0;
-    transition: all .5s ease;
-}
-
-.menu-text {
-    color: #fff;
-}
-
-.menu-text2 {
-    color: #000;
-}
-
-.hamburger-icon:hover p {
-    /*top: 15.8%;
-    right: 23%;*/
-    
-    margin-left: -60px;
-    opacity: 1;
-    transition: all .5s ease;
-}
-
-.hamburger {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-/*
-.mobilenav li:first-child {
-    top: 80%;
-}
-/* HAMBURGER */
-
-.navbar-brand img {
-    height: 1.5em !important;
-    width: auto;
-    z-index: 99999999999;
-    position: fixed;
-    top: 15%;
-    left: 20%;
-}
-
-.home {
-    /*background: url('https://unsplash.it/g/1440/1080/?random');*/
-    
-    background: url('../images/bg.png');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-
-.hero {
-    color: #fff;
-}
-
-.hero-text-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 4.3em;
-    margin-bottom: 0.6em;
-}
-
-.hero-text {
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    margin-bottom: 2em;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .vertical-align {
@@ -276,7 +59,27 @@ body {
     justify-content: center;
 }
 
-.home-button {
+.display-text-wrap {
+    color: #fff;
+    padding: 8em;
+}
+
+.display-text {
+    font-family: 'Crimson Text', serif;
+    font-size: 2em;
+    margin-bottom: 0.6em;
+    color: darkgoldenrod;
+}
+
+.main-text {
+    font-family: 'Crimson Text', serif;
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-bottom: 2em;
+    color: darkgoldenrod;
+}
+/*
+.cus-button {
     border: 2px solid #fff;
     background-color: none;
     padding: 1em;
@@ -290,22 +93,330 @@ body {
     text-align: center !important;
 }
 
-.home-button:hover {
+.cus-button:hover {
     border: 2px solid #fff;
     background-color: #fff;
     transition: all .3s ease;
     color: #000;
 }
 
-.home-button-wrap {
+.cus-button-wrap {
     margin: 0 auto !important;
     text-align: center !important;
 }
 
-.home-button-wrap:hover {
+.cus-button-wrap:hover {
     text-decoration: none;
     color: #000 !important;
+}*/
+/* LOGO */
+
+.navbar-brand img {
+    height: 1.5em !important;
+    width: auto;
+    z-index: 99999999999;
+    position: fixed;
+    top: 15%;
+    left: 20%;
 }
+
+.logo {
+    height: 2em !important;
+    width: 2em !important;
+    position: fixed;
+    z-index: 99999999;
+    transition: .6s ease;
+}
+
+.logo2 {
+    height: 1em;
+    position: fixed;
+    z-index: 99999999;
+    transition: .6s ease;
+}
+/* HAMBURGER */
+
+.top-animate {
+    background: darkgoldenrod !important;
+    top: 13px !important;
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    
+    transform: rotate(45deg);
+}
+
+.mid-animate {
+    opacity: 0;
+}
+
+.bottom-animate {
+    background: darkgoldenrod !important;
+    top: 13px !important;
+    -webkit-transform: rotate(-225deg);
+    /* Chrome, Safari, Opera */
+    
+    transform: rotate(-225deg);
+}
+
+.top-menu {
+    top: 5px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    transition: .6s ease;
+}
+
+.mid-menu {
+    top: 13px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    transition: .6s ease;
+}
+
+.bottom-menu {
+    top: 21px;
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    transition: .6s ease;
+}
+/*
+.hamburger-icon:hover .top-menu {
+    height: 3px;
+    transition: .6s ease;
+}
+
+.hamburger-icon:hover .mid-menu {
+    height: 3px;
+    transition: .6s ease;
+}
+
+.hamburger-icon:hover .bottom-menu {
+    height: 3px;
+    transition: .6s ease;
+}
+
+.hamburger-icon:hover .top-animate {
+    height: 3px;
+}
+
+.hamburger-icon:hover .bottom-animate {
+    height: 3px;
+}*/
+
+.menui {
+    background: darkgoldenrod;
+    transition: 0.6s ease;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    position: absolute;
+}
+
+.icon {
+    top: 10%;
+    right: 10%;
+    z-index: 999;
+    position: fixed;
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+.mobilenav {
+    /*    top: 47px !important;*/
+    
+    font-family: 'Crimson Text', serif;
+    font-size: 2em;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.mobilenav-wrap {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mobilenav li {
+    list-style-type: none;
+    text-align: center;
+    padding: 0.6em;
+}
+
+.mobilenav li a:hover {
+    color: goldenrod !important;
+    transition: all .3s ease;
+}
+
+.mobilenav li a {
+    font-size: 80%;
+    color: darkgoldenrod;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.hamburger-icon p {
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
+    font-weight: 700;
+    position: fixed;
+    z-index: 999999999;
+    margin-left: -45px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.menu-text {
+    color: darkgoldenrod;
+}
+
+.menu-text2 {
+    color: darkgoldenrod;
+}
+
+.hamburger-icon:hover p {
+    /*top: 15.8%;
+    right: 23%;*/
+    
+    margin-left: -60px;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.hamburger {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+/*
+.mobilenav li:first-child {
+    top: 80%;
+}
+/* HOME */
+
+.home-home-wrap {
+    /*
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://unsplash.it/g/1440/1080/?random');*/
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.home-home-wrap h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+}
+
+.home-intro-wrap {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.home-intro-wrap h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+}
+
+.home-about-wrap {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/3.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.home-about-wrap h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+}
+/*
+.home .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100vw !important;
+}*/
+/* ABOUT */
+
+.about {
+    background: #000;
+}
+
+.about-home-wrap {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-services-wrap {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-me-wrap {}
+
+.about-contact-wrap {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../images/16.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*
+.about .display-text-wrap {
+    color: #000;
+}
+
+.about-wrap .menui {
+    background-color: #000;
+}
+
+.about-wrap .menu-text {
+    color: #000;
+}*/
+
+.about-me {
+    padding: 6em;
+}
+/*
+.about .cus-button-wrap:hover {
+    color: #000 !important;
+}
+
+.about .cus-button {
+    color: #000;
+    border: 2px solid #000;
+}
+
+.about .cus-button:hover {
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+}*/
+/* MEDIA */
 
 @media only screen and (max-width: 349px) and (orientation: portrait) {
     .menu-text {
@@ -320,15 +431,15 @@ body {
     .mobilenav li a {
         font-size: 80%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 2.8em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1em;
         padding-left: 1em;
         padding-right: 1em;
     }
-    .home-button {
+    .cus-button {
         font-size: 0.8em;
         padding: 0.8em !important;
         width: 11em !important;
@@ -349,15 +460,15 @@ body {
     .mobilenav li a {
         font-size: 100%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3.3em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.1em;
         padding-left: 1em;
         padding-right: 1em;
     }
-    .home-button {
+    .cus-button {
         font-size: 0.8em;
         padding: 0.8em !important;
         width: 12em !important;
@@ -378,15 +489,15 @@ body {
     .mobilenav li a {
         font-size: 100%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3.5em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.3em;
         padding-left: 1em;
         padding-right: 1em;
     }
-    .home-button {
+    .cus-button {
         padding: 0.8em !important;
         width: 10em !important;
         margin-top: -0.7em !important;
@@ -406,15 +517,15 @@ body {
     .mobilenav li a {
         font-size: 100%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 4.5em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.8em;
         padding-left: 0.5em;
         padding-right: 0.5em;
     }
-    .home-button {
+    .cus-button {
         font-size: 1.3em;
         padding: 0.8em !important;
         width: 12em !important;
@@ -438,15 +549,15 @@ body {
     .mobilenav li a {
         font-size: 70%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 2.5em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.1em;
         padding-left: 5.5em;
         padding-right: 5.5em;
     }
-    .home-button {
+    .cus-button {
         font-size: 0.8em;
         padding: 0.8em !important;
         width: 12em !important;
@@ -471,15 +582,15 @@ body {
     .mobilenav li a {
         font-size: 70%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 2.8em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.1em;
         padding-left: 6em;
         padding-right: 6em;
     }
-    .home-button {
+    .cus-button {
         font-size: 0.8em;
         padding: 0.8em !important;
         width: 12em !important;
@@ -504,15 +615,15 @@ body {
     .mobilenav li a {
         font-size: 80%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.2em;
         padding-left: 8em;
         padding-right: 8em;
     }
-    .home-button {
+    .cus-button {
         padding: 0.6em !important;
         width: 12em !important;
     }
@@ -535,15 +646,15 @@ body {
     .mobilenav li a {
         font-size: 80%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.2em;
         padding-left: 11em;
         padding-right: 11em;
     }
-    .home-button {
+    .cus-button {
         padding: 0.8em !important;
         width: 12em !important;
     }
@@ -557,15 +668,15 @@ body {
     .mobilenav li a {
         font-size: 100%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3.5em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.2em;
         padding-left: 100px;
         padding-right: 100px;
     }
-    .home-button {
+    .cus-button {
         padding: 0.8em !important;
         width: 12em !important;
     }
@@ -579,10 +690,10 @@ body {
     .mobilenav li a {
         font-size: 100%;
     }
-    .hero-text-title {
+    .display-text {
         font-size: 3.9em;
     }
-    .hero-text {
+    .main-text {
         font-size: 1.6em;
         padding-left: 50px;
         padding-right: 50px;
@@ -592,7 +703,7 @@ body {
         margin-right: 0em !important;
     }
 }
-
+/*
 @media only screen and (min-width: 1051px) and (max-width: 1440px) and (orientation: landscape) {}
 /*
 @media only screen and (max-width: 1100px) and (orientation: landscape) {
