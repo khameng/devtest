@@ -32,15 +32,15 @@
 
     <div class="mobilenav">
         <div class="mobilenav-wrap">
-            <li><a href="./index.html">Home</a>
+            <li><a href="./index.html">&#91; Home &#93;</a>
             </li>
-            <li><a href="./work.html">Work</a>
+            <li><a href="./about.html">&#91; About &#93;</a>
             </li>
-            <li><a href="./about.html">About</a>
+            <li><a href="./work.html">&#91; Work &#93;</a>
             </li>
-            <li><a href="./contact.html">Contact</a>
+            <li><a href="./contact.html">&#91; Contact &#93;</a>
             </li>
-            <li><a href="https://medium.com/the-things" target="_blank">Blog</a>
+            <li><a href="https://medium.com/the-things" target="_blank">&#91; Blog &#93;</a>
             </li>
         </div>
     </div>
@@ -57,10 +57,62 @@
             </div>
         </a>
     </div>
+    <!--
+    <div class="dotstyle dotstyle-fillin vertical-align" id="dotstyle">
+        <ul>
+            <li class="active"><a href="#home" rel="pagescroll">Home</a>
+            </li>
+            <li><a href="#intro" rel="pagescroll">Introduction</a>
+            </li>
+            <li><a href="#about" rel="pagescroll">About</a>
+            </li>
+            <li><a href="#work" rel="pagescroll">Work</a>
+            </li>
+            <li><a href="#contact" rel="pagescroll">Contact</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+        </ul>
+    </div>
+-->
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#section1" data-number="1">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#section2" data-number="2">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#section3" data-number="3">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#section4" data-number="4">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#section5" data-number="5">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#section6" data-number="6">
+                    <span class="cd-dot"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <section>
-        <div class="home" id="home">
-            <div class="home-home-wrap">
+    <section class="cd-section" id="section1">
+        <div class="home">
+            <div class="home-home-wrap" id="home" data-number="1">
                 <div class="container">
                     <div class="row">
                         <div class="display-text-wrap vertical-align text-center">
@@ -112,8 +164,8 @@
             </div>
     </section>
 
-    <section>
-        <div class="home-intro-wrap">
+    <section class="cd-section" id="section2">
+        <div class="home-intro-wrap" id="intro" data-number="2">
             <div class="container">
                 <div class="row">
                     <div class="display-text-wrap vertical-align text-center">
@@ -128,13 +180,14 @@
         </div>
     </section>
 
-    <section>
-        <div class="home-about-wrap">
+    <section class="cd-section" id="section3">
+        <div class="home-about-wrap" id="about" data-number="3">
             <div class="container">
                 <div class="row">
                     <div class="display-text-wrap vertical-align text-center">
                         <div>
                             <h1 class="display-text slide-bottom">About me</h1>
+                            <a href="#" class="cus-button-wrap"><h1 class="main-text cus-button slide-bottom">&#91; Learn more &#93;</h1></a>
                         </div>
                     </div>
                 </div>
@@ -142,30 +195,37 @@
         </div>
     </section>
 
-    <div class="home-intro-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="display-text-wrap vertical-align text-center">
-                    <div>
-                        <h1 class="display-text">No matter if you're an individual, startup or even a corporation, my services are for you.</h1>
+    <section class="cd-section" id="section4">
+        <div class="home-work-wrap" id="work" data-number="4">
+            <div class="container">
+                <div class="row">
+                    <div class="display-text-wrap vertical-align text-center">
+                        <div>
+                            <h1 class="display-text slide-bottom">My Work</h1>
+                            <a href="#" class="cus-button-wrap"><h1 class="main-text cus-button slide-bottom">&#91; Learn more &#93;</h1></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="home-intro-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="display-text-wrap vertical-align text-center">
-                    <div>
-                        <h1 class="display-text">From apps to websites, logos to business cards, clothing to magazines, I've much to offer.</h1>
-                        <a href="#"><h1 class="display-text link">learn more</h1></a>
+    <section class="cd-section" id="section5">
+        <div class="home-connect-wrap" id="contact" data-number="5">
+            <div class="container">
+                <div class="row">
+                    <div class="display-text-wrap vertical-align text-center">
+                        <div>
+                            <h1 class="display-text slide-bottom">Contact me</h1>
+                            <a href="#" class="cus-button-wrap"><h1 class="main-text cus-button slide-bottom">&#91; Learn more &#93;</h1></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
     </div>
 
 
@@ -176,6 +236,8 @@
     <script src="js/script.js"></script>
     <script src="js/jquery.scrollify.min.js"></script>
     <script src="js/jquery.fadethis.min.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -219,7 +281,7 @@
                 section: "section",
                 sectionName: "section-name",
                 easing: "easeOutExpo",
-                scrollSpeed: 1700,
+                scrollSpeed: 1800,
                 offset: 0,
                 scrollbars: true,
                 before: function () {},
@@ -233,6 +295,23 @@
             speed: 1000
         });
     </script>
+    <!--
+    <script>
+        (function ($) {
+            $(window).load(function () {
+                /* Page Scroll to id fn call */
+                $("a[rel='pagescroll']").mPageScroll2id({
+                    highlightSelector: "#pagescroll"
+                });
+                /* demo functions */
+                $("a[rel='pagescroll']").click(function (e) {
+                    e.preventDefault();
+                    var to = $(this).parent().parent("section").next().attr("id");
+                    $.mPageScroll2id("scrollTo", to);
+                });
+            });
+        })(jQuery);
+    </script>-->
 
 </body>
 <!--
