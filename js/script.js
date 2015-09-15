@@ -16,27 +16,6 @@ jQuery(document).ready(function ($) {
         updateNavigation();
     });
 
-    //smooth scroll to the section
-    navigationItems.on('click', function (event) {
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });
-    //smooth scroll to second section
-    $('.cd-scroll-down').on('click', function (event) {
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });
-
-    //open-close navigation on touch devices
-    $('.touch .cd-nav-trigger').on('click', function () {
-        $('.touch #cd-vertical-nav').toggleClass('open');
-
-    });
-    //close navigation on touch devices when selectin an elemnt from the list
-    $('.touch #cd-vertical-nav a').on('click', function () {
-        $('.touch #cd-vertical-nav').removeClass('open');
-    });
-
     function updateNavigation() {
         contentSections.each(function () {
             $this = $(this);
@@ -49,11 +28,4 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    function smoothScroll(target) {
-        $('body,html').animate({
-                'scrollTop': target.offset().top
-            },
-            600
-        );
-    }
 });
