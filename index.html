@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <head>
   <title>Ng Kha Meng</title>
-  <link href='css/style.css' rel='stylesheet'>
-  <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='../css/style.css' rel='stylesheet'>
+  <link href='../css/bootstrap.min.css' rel='stylesheet'>
   <meta content='width=device-width' name='viewport'>
 </head>
 <body>
+  <div id='preloader'>
+    <div id='status'>&nbsp;</div>
+  </div>
   <div class="mobilenav">
       <div class="mobilenav-wrap">
           <li>
               <a href="./index.html">&#91; Home &#93;</a>
           </li>
           <li>
-              <a href="./about.html">&#91; About &#93;</a>
+              <a href="../html/about.html">&#91; About &#93;</a>
           </li>
           <li>
-              <a href="./work.html">&#91; Work &#93;</a>
+              <a href="../work.html">&#91; Work &#93;</a>
           </li>
           <li>
-              <a href="./contact.html">&#91; Contact &#93;</a>
+              <a href="../contact.html">&#91; Contact &#93;</a>
           </li>
           <li>
               <a href="https://medium.com/the-things" target="_blank">&#91; Blog &#93;</a>
@@ -166,11 +169,11 @@
       </div>
     </section>
   </div>
-  <script src='js/bootstrap.min.js'></script>
-  <script src='js/jquery.min.js'></script>
-  <script src='js/script.js'></script>
-  <script src='js/wow.min.js'></script>
-  <script src='js/smooth-scroll.min.js'></script>
+  <script src='../js/bootstrap.min.js'></script>
+  <script src='../js/jquery.min.js'></script>
+  <script src='../js/script.js'></script>
+  <script src='../js/wow.min.js'></script>
+  <script src='../js/smooth-scroll.min.js'></script>
   <script>
     $(".menu-text2").hide();
     $(".icon").click(function () {
@@ -194,5 +197,14 @@
         offset: 0,
         callback: function (toggle, anchor) {}
     });
+  </script>
+  <script>
+    $(window).load(function() {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('body').delay(350).css({
+            'overflow':'visible'
+        });
+    })
   </script>
 </body>

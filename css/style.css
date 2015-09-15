@@ -3213,9 +3213,37 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url("../images/status.gif");
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
 body {
   background: #000;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .vertical-align {
@@ -3237,10 +3265,6 @@ body {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-}
-
-.display-text-wrap {
-  padding: 0em;
 }
 
 .display-text {
@@ -3309,290 +3333,4 @@ body {
   background-image: url("../images/background11.png") !important;
 }
 
-/* MEDIA */
-/*
-@media only screen and (max-width: 349px) and (orientation: portrait) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li {
-        padding: 0.3em;
-    }
-    .mobilenav li a {
-        font-size: 80%;
-    }
-    .display-text {
-        font-size: 2.8em;
-    }
-    .main-text {
-        font-size: 1em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .cus-button {
-        font-size: 0.8em;
-        padding: 0.8em !important;
-        width: 11em !important;
-        margin-top: -0.7em !important;
-    }
-    .button-1 {
-        margin-left: -1.3em !important;
-    }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 399px) and (orientation: portrait) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li a {
-        font-size: 100%;
-    }
-    .display-text {
-        font-size: 3.3em;
-    }
-    .main-text {
-        font-size: 1.1em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .cus-button {
-        font-size: 0.8em;
-        padding: 0.8em !important;
-        width: 12em !important;
-        margin-top: -0.7em !important;
-    }
-    .button-1 {
-        margin-left: -0.6em !important;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 599px) and (orientation: portrait) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li a {
-        font-size: 100%;
-    }
-    .display-text {
-        font-size: 3.5em;
-    }
-    .main-text {
-        font-size: 1.3em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .cus-button {
-        padding: 0.8em !important;
-        width: 10em !important;
-        margin-top: -0.7em !important;
-    }
-    .button-1 {
-        margin-left: -0.2em !important;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 799px) and (orientation: portrait) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li a {
-        font-size: 100%;
-    }
-    .display-text {
-        font-size: 4.5em;
-    }
-    .main-text {
-        font-size: 1.8em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-    .cus-button {
-        font-size: 1.3em;
-        padding: 0.8em !important;
-        width: 12em !important;
-        margin-top: -0.4em !important;
-    }
-    .button-1 {
-        margin-left: -0.4em !important;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 499px) and (orientation: landscape) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li {
-        padding: 0.1em;
-    }
-    .mobilenav li a {
-        font-size: 70%;
-    }
-    .display-text {
-        font-size: 2.5em;
-    }
-    .main-text {
-        font-size: 1.1em;
-        padding-left: 5.5em;
-        padding-right: 5.5em;
-    }
-    .cus-button {
-        font-size: 0.8em;
-        padding: 0.8em !important;
-        width: 12em !important;
-        margin-top: !important;
-    }
-    .button-1 {
-        margin-left: 1em !important;
-        margin-right: -1em!important;
-    }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 599px) and (orientation: landscape) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li {
-        padding: 0.1em;
-    }
-    .mobilenav li a {
-        font-size: 70%;
-    }
-    .display-text {
-        font-size: 2.8em;
-    }
-    .main-text {
-        font-size: 1.1em;
-        padding-left: 6em;
-        padding-right: 6em;
-    }
-    .cus-button {
-        font-size: 0.8em;
-        padding: 0.8em !important;
-        width: 12em !important;
-        margin-top: !important;
-    }
-    .button-1 {
-        margin-left: 2.5em!important;
-        margin-right: -3em !important;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 699px) and (orientation: landscape) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li {
-        padding: 0.3em;
-    }
-    .mobilenav li a {
-        font-size: 80%;
-    }
-    .display-text {
-        font-size: 3em;
-    }
-    .main-text {
-        font-size: 1.2em;
-        padding-left: 8em;
-        padding-right: 8em;
-    }
-    .cus-button {
-        padding: 0.6em !important;
-        width: 12em !important;
-    }
-    .button-1 {
-        margin-left: 2.5em !important;
-        margin-right: -3em !important;
-    }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 799px) and (orientation: landscape) {
-    .menu-text {
-        display: none !important;
-    }
-    .menu-text2 {
-        display: none !important;
-    }
-    .mobilenav li {
-        padding: 0.3em;
-    }
-    .mobilenav li a {
-        font-size: 80%;
-    }
-    .display-text {
-        font-size: 3em;
-    }
-    .main-text {
-        font-size: 1.2em;
-        padding-left: 11em;
-        padding-right: 11em;
-    }
-    .cus-button {
-        padding: 0.8em !important;
-        width: 12em !important;
-    }
-    .button-1 {
-        margin-left: 3.5em !important;
-        margin-right: -5em !important;
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
-    .mobilenav li a {
-        font-size: 100%;
-    }
-    .display-text {
-        font-size: 3.5em;
-    }
-    .main-text {
-        font-size: 1.2em;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .cus-button {
-        padding: 0.8em !important;
-        width: 12em !important;
-    }
-    .button-1 {
-        margin-left: 1.5em !important;
-        margin-right: -2.5em !important;
-    }
-}
-
-@media only screen and (min-width: 1001px) and (max-width: 1050px) and (orientation: landscape) {
-    .mobilenav li a {
-        font-size: 100%;
-    }
-    .display-text {
-        font-size: 3.9em;
-    }
-    .main-text {
-        font-size: 1.6em;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .button-1 {
-        margin-left: 0em !important;
-        margin-right: 0em !important;
-    }
-}*/
+/* ABOUT */
