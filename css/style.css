@@ -3226,8 +3226,8 @@ Copyright (c) 2015 Daniel Eden
 }
 
 #status {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 150px;
   position: absolute;
   left: 50%;
   /* centers the loading animation horizontally one the screen */
