@@ -3221,13 +3221,13 @@ Copyright (c) 2015 Daniel Eden
   bottom: 0;
   background-color: #000;
   /* change if the mask should have another color then white */
-  z-index: 99;
+  z-index: 99999999999999999999999999;
   /* makes sure it stays on top */
 }
 
 #status {
-  width: auto;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   left: 50%;
   /* centers the loading animation horizontally one the screen */
