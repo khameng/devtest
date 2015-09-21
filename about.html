@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    var images = new Array()
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
+    }
+    preload(
+        "./images/status.gif"
+    )
+  </script>
+  <title>About | Ng Kha Meng</title>
+  <link href='./css/style.css' rel='stylesheet'>
+  <link href='./css/bootstrap.min.css' rel='stylesheet'>
+  <meta content='width=device-width' name='viewport'>
+</head>
+<body>
+  <div id='preloader'>
+    <div id='status'>&nbsp;</div>
+  </div>
+  <div class="mobilenav">
+      <div class="mobilenav-wrap">
+          <li>
+              <a href="./index.html">&#91; Home &#93;</a>
+          </li>
+          <li>
+              <a href="./about.html">&#91; About &#93;</a>
+          </li>
+          <li>
+              <a href="./work.html">&#91; Work &#93;</a>
+          </li>
+          <li>
+              <a href="./contact.html">&#91; Contact &#93;</a>
+          </li>
+          <li>
+              <a href="https://medium.com/the-things" target="_blank">&#91; Blog &#93;</a>
+          </li>
+      </div>
+  </div>
+  <div class='hamburger-icon'>
+    <a class='icon' href='javascript:viod(0)'>
+      <div class='hamburger'>
+        <p class='menu-text'>Menu</p>
+        <p class='menu-text2'>Close</p>
+        <div class='menui top-menu'></div>
+        <div class='menui mid-menu'></div>
+        <div class='menui bottom-menu'></div>
+      </div>
+    </a>
+  </div>
+  <nav id="cd-vertical-nav">
+      <ul>
+          <li>
+              <a data-scroll href="#section1" data-number="1">
+                  <span class="cd-dot"></span>
+              </a>
+          </li>
+          <li>
+              <a data-scroll href="#section2" data-number="2">
+                  <span class="cd-dot"></span>
+              </a>
+          </li>
+          <li>
+              <a data-scroll href="#section3" data-number="3">
+                  <span class="cd-dot"></span>
+              </a>
+          </li>
+          <li>
+              <a data-scroll href="#section4" data-number="4">
+                  <span class="cd-dot"></span>
+              </a>
+          </li>
+          <li>
+              <a data-scroll href="#section5" data-number="5">
+                  <span class="cd-dot"></span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+  <div class='about'>
+    <section class='cd-section section' id='section1'>
+      <div class='about-home-wrap about-wrap' id='home'>
+        <div class='container'>
+          <div class='row'>
+            <div class='display-text-wrap vertical-align text-center'>
+              <div>
+                <h1 class='display-text wow fadeInUp'>About Me</h1>
+                <h1 class='main-text wow fadeInUp'>Who Am I</h1>
+                <a href="#section2" data-scroll>
+                    <img src="./images/scroll.svg" class="svg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='cd-section section' id='section2'>
+      <div class='about-intro-wrap about-wrap' id='intro'>
+        <div class='container-fluid content-wrap'>
+          <div class='row'>
+            <div class='col-md-5'>
+              <h1 class='display-text wow fadeInUp'>Introduction</h1>
+              <p class='content-text wow fadeInUp'>My name is Ng Kha Meng. I&rsquo;m a graphic designer and front-end developer. At the age of 14, I started on the path of design. I&rsquo;ve always been fascinated by the world of art: the harmony; the contrasts; the hidden messages.</p>
+              <p class='content-text wow fadeInUp'>Fast forward to this day, I&rsquo;ve learned and grown a lot. I&rsquo;ve gained experience and created things that I couldn&rsquo;t have imagined before. There were some obstacles along the way, but I wasn&rsquo;t discouraged. It was truly a journey of a lifetime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='cd-section section' id='section3'>
+      <div class='about-about-wrap about-wrap' id='about'>
+        <div class='container content-wrap'>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <h1 class='display-text wow fadeInUp'>Philosophy</h1>
+              <p class='content-text wow fadeInUp'>I genuinely believe that designers are truly passionate in their craft. I am too. My conduct is to help you, the client, as best as I can. I will not always do what you request, but rather what is best for you and your business. Rest assured, I will assist you to achieve your goals, and leave a lasting impression on your business.</p>
+              <p class='content-text wow fadeInUp'>I work by the ideology that the purpose of design is to make people&rsquo;s lives better. Designs that are aesthethically pleasing, yet doesn&rsquo;t solve a problem are absolutely useless. I design to serve a purpose, and that purpose is to leave this world a better place than I entered it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='cd-section section' id='section4'>
+      <div class='about-work-wrap about-wrap' id='work'>
+        <div class='container content-wrap'>
+          <div class='row'>
+            <div class='col-md-6'>
+              <h1 class='display-text wow fadeInUp'>Services</h1>
+              <p class='content-text wow fadeInUp'>I have experience working on many projects, stretching various fields. I offer services such as: branding and identity, print design, clothing design, website and app design and website creation.</p>
+              <p class='content-text wow fadeInUp'>Even if your project isn&rsquo;t listed here, contact me and we can work something out.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='cd-section section' id='section5'>
+      <div class='about-contact-wrap about-wrap' id='contact'>
+        <div class='container content-wrap'>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <h1 class='display-text wow fadeInUp'>Availability</h1>
+              <p class='content-text wow fadeInUp'>I&rsquo;m available as a freelancer, working on various projects on a contract basis.</p>
+              <a class='cus-button-wrap' href='./contact.html'>
+                <h1 class='main-text cus-button wow fadeInUp'>[ Contact Me ]</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src='./js/bootstrap.min.js'></script>
+  <script src='./js/jquery.min.js'></script>
+  <script src='./js/script.js'></script>
+  <script src='./js/wow.min.js'></script>
+  <script src='./js/smooth-scroll.min.js'></script>
+  <script>
+    $(".menu-text2").hide();
+    $(".icon").click(function () {
+        if ($(".menu-text2").is(":visible")) {
+            $(".menu-text2").hide();
+            $(".menu-text").show();
+        } else {
+            $(".menu-text").hide();
+            $(".menu-text2").show();
+        }
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 0,
+        callback: function (toggle, anchor) {}
+    });
+  </script>
+  <script>
+    $(window).load(function() {
+        $('#status').fadeOut();
+        $('#preloader').delay(700).fadeOut('slow');
+        $('body').delay(700).css({
+            'overflow':'visible'
+        });
+    })
+  </script>
+</body>
+<!--
+  <script>
+    $('body').on('click', 'a', function(e) {
+        e.preventDefault();
+        var url = $(this).prop('href');
+        window.location.href = url.split("?")[0];
+    });
+  </script>
+  <script>
+    $(".svg1").show();
+    $(".svg2").show();
+    $(".svg1").onmouseover(function () {
+        $(".svg1").toggleClass("transparent");
+        $(".svg2").toggleClass("opaque");
+    });
+    $(".svg1").onmouseout(function () {
+        $(".svg2").toggleClass("transparent");
+        $(".svg1").toggleClass("opaque");
+    });
+  </script>
+-->
